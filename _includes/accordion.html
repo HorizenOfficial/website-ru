@@ -1,0 +1,326 @@
+<div id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading1">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          Ресурсы Zen и ZenCash
+        </a>
+      </h5>
+    </div>
+    <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1">
+      <div class="card-block">
+        <a href="{{site.links.blog}}">Блог ZenCash</a><br />
+        <a href="{{site.links.bitcointalk}}">ZenCash на Bitcointalk</a><br />
+        <a href="{{site.links.youtube}}">Канал ZenCash на YouTube</a><br />
+        <a href="{{site.links.reddit}}">ZenCash в Reddit</a><br />
+        <a href="{{site.links.facebook}}">Страница ZenCash на Facebook</a><br />
+        <a href="{{site.links.medium}}">Блог ZenCash на Medium</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading2">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          Кошельки для частных транзакций и коммуникаций
+        </a>
+      </h5>
+    </div>
+    <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+      <div class="card-block">
+        {% include content/wallets.html %}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading3">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Где купить ZenCash
+        </a>
+      </h5>
+    </div>
+    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+      <div class="card-block">
+        {% include content/buy-zen.html %}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading4">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          Присоединиться к Сообществу ZenCash
+        </a>
+      </h5>
+    </div>
+    <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+      <div class="card-block">
+        <a href="{{site.links.slack}}">ZenCash на Slack Invite</a><br />
+        <a href="{{site.links.forum}}">Форум ZenCash</a><br />
+        <a href="{{site.links.telegram}}">ZenCash в Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading5">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+          Майнинг Zen и поддержка сети
+        </a>
+      </h5>
+    </div>
+    <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+      <div class="card-block text-center">
+        {% include content/mine-zen.html %}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading6">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+          Блокчейн эксплорер ZenCash
+        </a>
+      </h5>
+    </div>
+    <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+      <div class="card-block">
+        <a href="https://explorer.zensystem.io/">https://explorer.zensystem.io/</a><br />
+        <a href="http://node1.zenchain.info:8886/">http://node1.zenchain.info:8886/</a><br />
+        <a href="http://explorer.zenmine.pro/insight/">http://explorer.zenmine.pro/insight/</a>
+        <a href="https://explorer.zen-solutions.io/">https://explorer.zen-solutions.io/</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading7">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+          Информация о Защищенных Узлах
+        </a>
+      </h5>
+    </div>
+    <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+      <div class="card-block">
+        <p>Защищенные узлы находятся в стадии разработки. Команда Zen уделяет приоритетное внимание защищенным узлам, так как они очень важны для безопасности и удобства использования сети Zen.</p>
+        <p><a href="https://blog.zensystem.io/zencash-secure-node-system-overview-video/">Обзор, Объяснение и Видео Защищенного Узла</a><br />
+        <a href="https://forum.zensystem.io/t/secure-node-tracking-and-payment-system-software-development-project-discussion/126">Обсуждение Дизайна Защищенных Узлов</a><br />
+        <a href="https://blockoperations.com/build-zencash-secure-node-part-1-prepare-vps/">Пример Разработки Защищенных Узлов</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  {% comment %}
+  <div class="card">
+    <div class="card-header" role="tab" id="heading1">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+          Why start this project?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1">
+      <div class="card-block">
+        <p>
+          All existing cryptocurrencies fall short of being fully private; whether it's from network-level deficiencies or economical shortcomings. There is no cryptocurrency in existence that guarantees full end-to-end encryption of the distributed network. Zen is designed to be fully encrypted as a network and also as a means to send and distribute money.
+        </p>
+        <p>
+          Zen doesn't stop there though. Zen is a massively distributed and fully encrypted storage system with endless possibilities.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading2">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          What is zero-knowledge encryption?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+      <div class="card-block">
+        <p>Simply put zero-knowledge encryption allows for undecipherable encrypted communications to propagate throughout the network while still providing protections against denial of service attacks and spamming. Zero-knowledge encryption allows for fully cloaked economic activity where the recipient, sender, amount, and date of activity is kept confidential.</p>
+        <p>For more infomation on the zero knowledge protocol zencash uses, see <a href="https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof">ZK-SNARKS</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading3">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          What is Zen and when will Zen be released?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+      <div class="card-block">
+        <p>
+          Zen is a platform for secure communications and for deniable economic activity. It is an evolution of the Zclassic codebase built by Zclassic's original developers aimed at primarily enabling intriniscally secure communications and resilient networking. As a platform it enables secure global messaging, persistent file storage, and completely private economic activity.
+        </p>
+        <p>
+          At block 110,000 a snapshot of the Zclassic blockchain was taken. On May 30th, the Zen network will be launched from this snapshot. That means there will be a period of about 1 week you will have to wait, from block 110,000 on the Zclassic blockchain, until the ZenCash block 110,001 starts at the launch. Zclassic will retain its original functionality and feature set but the Zen network will be adapted to include segregated witness (segwit) support and additional cryptographic technologies.
+        </p>
+        <p>
+          Rather than abandoning Zclassic, the team has agreed that development will continue on both networks.
+        </p>
+        <p>
+          Initially the split from the Zclassic blockchain was planned to occur on May 23rd. The reasons for the change to block 110,000 are explained in detail <a href="https://blog.zensystem.io/big-news-chain-split-from-zclassic-now-at-block-110000">here</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading4">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+          How is Zen financially supported? Is it a ICO, pre-mine, or etc?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+      <div class="card-block">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p>
+              Zclassic is a completely community-funded project relying on independent donations. There has been no ICO, pre-mine, or founder's tax. Lessons learned from this launch-style showed that a lack of funding significantly hinders growth since all funds required for exchange listings, development, server hosting, and contributor bounties must be self-raised.
+            </p>
+            <p>
+              Zen takes these lessons learned and pairs it with a DAO-style governance model based upon proof-of-shares. In the Zen network, 8.50% of the tokens are allocated for community development, marketing, maintenance, and the DAO. This ensures that there are always enough resources available for growth.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="table-responsive">
+              <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th class="success"> </th>
+                    <th class="success text-center">% Allocated</th>
+                    <th class="success text-center">Tokens Per Month</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="info text-right"><strong>Miner Allocation</strong></td>
+                    <td class="info text-center">88.00%</td>
+                    <td class="info text-center">190,080</td>
+                  </tr>
+                  <tr>
+                    <td class="info text-right"><strong>Node Allocation</strong></td>
+                    <td class="info text-center">3.50%</td>
+                    <td class="info text-center">7,560</td>
+                  </tr>
+                  <tr>
+                    <td class="info text-right"><strong>Reserved Funding</strong></td>
+                    <td class="info text-center">8.50%</td>
+                    <td class="info text-center">18,360</td>
+                  </tr>
+                  <tr>
+                    <td class="active text-right"><strong>DAO Discretionary</strong></td>
+                    <td class="active text-center">5.00%</td>
+                    <td class="active text-center">10,800</td>
+                  </tr>
+                  <tr>
+                    <td class="active text-right"><strong>Core Discretionary</strong></td>
+                    <td class="active text-center">3.50%</td>
+                    <td class="active text-center">7,560</td>
+                  </tr>
+                  <tr>
+                    <td class="success text-right"><strong>Total</strong></td>
+                    <td class="success text-center">100.00%</td>
+                    <td class="success text-center">216,000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading5">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+          I am an early Zclassic investor, what does this mean to me?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+      <div class="card-block">
+        <p>
+          Anyone who holds Zclassic at the time of the snapshot at block 110,000 (approximatley May 18th, 2017 16:40 UTC) will be allocated a 1:1 amount of Zen automatically on May 30th. Simply import your private keys saved shortly after the snapshot into the new Zen wallet to redeem your tokens. We are also working with the various exchanges to ensure everyone will be credited appropriately on their platforms.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading6">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+          Are full nodes going to be incentivized with block rewards?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+      <div class="card-block">
+        <p>
+          Yes. Anyone that runs a full node and participates in the network node funds allocation program will receive their share of 3.50% of the coinbase rewards. Additionally one of the functions of the DAO will be to maintain network node size and may allocate additional funds to node operators.
+        </p>
+        <p>
+          The Zen network target size is to be at least 1,000 fully operational nodes. At this size at least 7.56 zen will be rewarded to each node operator. In the event the Zen network size has not been reached the DAO may allocate some of its discretionary funds to encourage node deployment.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading7">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+          What is going to happen to Zclassic? Why not start a brand new blockchain?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+      <div class="card-block">
+        <p>
+          We have evolved and our combined vision simply outgrew the "Classic" designation of Zclassic; Zen is a much needed evolution and rebrand supported by the original developers. We also believe the Zclassic network has merit and therefore we will continue to support it.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" role="tab" id="heading9">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+          How is Zen different from existing anonymous networks such as Tor?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
+      <div class="card-block">
+        <p>
+          Zen is based upon content-addressable storage and is a means to store data permanently. Technologies such as Tor are predominately routing protocols that do not guarantee any sort of data permanence.
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endcomment %}
+
+</div>

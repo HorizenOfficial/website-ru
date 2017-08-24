@@ -1,0 +1,22 @@
+/*
+The main SCSS file for everything, yep
+*/
+
+@import "../../bower_components/normalize-css/normalize";
+@import "../../bower_components/bootstrap/scss/bootstrap";
+// @import "../../bower_components/animsition/dist/css/animsition";
+
+@import "partials/variables";
+@import "partials/mixins";
+
+@import "vendor/animations";
+@import "vendor/hamburgers/hamburgers";
+@import "vendor/font-awesome/font-awesome";
+
+@import "partials/main";
+@import "partials/base";
+@import "partials/layout";
+// @import "partials/syntax-highlighting";
+
+@import "partials/elements";
+@import "partials/modules";

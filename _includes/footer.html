@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-12 text-center">
+        <small>Zensystem.io &copy; {{ 'now' | date: "%Y" }}</small>
+      </div>
+      <div class="col-md-12 text-center">
+        <ul class="social-media-list">
+          {% if site.author.twitter %}
+          <li>
+            <a href="{{site.links.twitter}}">Twitter</a>
+          </li>
+          {% endif %}
+          <li>
+            <a href="{{site.links.blog}}">Блог</a>
+          </li>
+          <li>
+            <a href="mailto:info@zensystem.io">Обратная связь</a>
+          </li>
+          <!-- <li>
+            <a href="https://github.com/ZencashOfficial">GitHub</a>
+          </li> -->
+
+          {% if site.author.facebook %}
+          <li>
+            {% include icons/icon-facebook.html username=site.author.facebook %}
+          </li>
+          {% endif %}
+          {% if site.author.linkedin %}
+          <li>
+            {% include icons/icon-linkedin.html username=site.author.linkedin %}
+          </li>
+          {% endif %}
+          {% if site.author.gplus %}
+          <li>
+            {% include icons/icon-gplus.html username=site.author.gplus %}
+          </li>
+          {% endif %}
+          {% if site.author.youtube %}
+          <li>
+            {% include icons/icon-youtube.html username=site.author.youtube %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

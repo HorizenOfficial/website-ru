@@ -1,0 +1,296 @@
+/*-------------------------------------------------------*\
+    Mixins
+/*-------------------------------------------------------*/
+
+@mixin bgcolor($color, $opacity) {
+  background: $color;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-ie})";
+  background: rgba($color, $opacity);
+}
+
+@mixin bgimagecover($bgcolor, $imageurl, $bgposition) {
+  background: $bgcolor url($imageurl) no-repeat scroll $bgposition;
+  background-size: cover;
+}
+
+@mixin bgimageblend($bgcolor, $opacity, $imageurl, $bgposition) {
+  background-image: url($imageurl);
+  background-color: $bgcolor;
+  background-color: rgba($bgcolor,$opacity);
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $bgposition;
+}
+
+@mixin gradient-over-img($gradient-from, $gradient-to, $opacity, $imageurl, $bgposition) {
+  background: $gradient-from;
+  background-image: url($imageurl);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($gradient-from), to($gradient-to));
+  background-image: -webkit-linear-gradient(top, rgba($gradient-from, $opacity), rgba($gradient-to, $opacity)), url($imageurl);
+  background-image: -moz-linear-gradient(top, rgba($gradient-from, $opacity), rgba($gradient-to, $opacity)), url($imageurl);
+  background-image: -ms-linear-gradient(top, rgba($gradient-from, $opacity), rgba($gradient-to, $opacity)), url($imageurl);
+  background-image: -o-linear-gradient(top, rgba($gradient-from, $opacity), rgba($gradient-to, $opacity)), url($imageurl);
+  background-image: linear-gradient(to bottom, rgba($gradient-from, $opacity), rgba($gradient-to, $opacity)), url($imageurl);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $bgposition;
+}
+
+@mixin gradient-over-img-opacity($gradient-from, $gradient-to, $imageurl, $bgposition) {
+  background: $gradient-from;
+  background-image: url($imageurl);
+  background-image: -webkit-gradient(linear, left top, left bottom, from($gradient-from), to($gradient-to));
+  background-image: -webkit-linear-gradient(top, $gradient-from, $gradient-to), url($imageurl);
+  background-image: -moz-linear-gradient(top, $gradient-from, $gradient-to), url($imageurl);
+  background-image: -ms-linear-gradient(top, $gradient-from, $gradient-to), url($imageurl);
+  background-image: -o-linear-gradient(top, $gradient-from, $gradient-to), url($imageurl);
+  background-image: linear-gradient(to bottom, $gradient-from, $gradient-to), url($imageurl);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $bgposition;
+}
+
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+
+@mixin transition($animate) {
+	-moz-transition: $animate;
+	-o-transition: $animate;
+	-webkit-transition: $animate;
+	transition: $animate;
+}
+
+@mixin background-size($property) {
+  -webkit-background-size: $property;
+  -moz-background-size: $property;
+  -o-background-size: $property;
+  background-size: $property;
+}
+
+@mixin word-wrap() {
+  word-break:     break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens:    auto;
+  hyphens:         auto;
+}
+
+// --------------------------------------------------
+
+@mixin font($fontsize, $lineheight, $fontsizeDefault: 16) {
+    font-size: ($fontsize*100%/$fontsizeDefault);
+    line-height: ($lineheight/$fontsize);
+}
+@mixin sizing($boxsizing: border-box) {
+    -moz-box-sizing: $boxsizing;
+    -webkit-box-sizing: $boxsizing;
+    box-sizing: $boxsizing;
+}
+@mixin size($width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+@mixin box-shadow($shadow) {
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin gradient($gradient-from, $gradient-to) {
+    background-color: $gradient-from;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($gradient-from), to($gradient-to));
+    background-image: -webkit-linear-gradient(top, $gradient-from, $gradient-to);
+    background-image: -moz-linear-gradient(top, $gradient-from, $gradient-to);
+    background-image: -ms-linear-gradient(top, $gradient-from, $gradient-to);
+    background-image: -o-linear-gradient(top, $gradient-from, $gradient-to);
+    background-image: linear-gradient(to bottom, $gradient-from, $gradient-to);
+}
+@mixin transition($string) {
+    -moz-transition: $string;
+    -ms-transition: $string;
+    -o-transition: $string;
+    -webkit-transition: $string;
+    transition: $string;
+}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin bgsize($string: cover) {
+    -moz-background-size: $string;
+    -webkit-background-size: $string;
+    -o-background-size: $string;
+    background-size: $string;
+}
+@mixin rotate($deg) {
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform: rotate($deg);
+}
+@mixin hyphens($mode: auto) {
+    word-wrap: break-word;
+    -webkit-hyphens: $mode;
+    -moz-hyphens: $mode;
+    -ms-hyphens: $mode;
+    -o-hyphens: $mode;
+    hyphens: $mode;
+}
+@mixin user-select($val) {
+    -webkit-touch-callout: $val;
+    -webkit-user-select: $val;
+    -khtml-user-select: $val;
+    -moz-user-select: $val;
+    -ms-user-select: $val;
+    user-select: $val;
+}
+@mixin stretchy($width) {
+    width: $width/$wrap*100%;
+}
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+
+// --------------------------------------------------
+
+@mixin animation($properties) {
+  -webkit-animation: $properties;
+  -o-animation: $properties;
+  animation: $properties;
+}
+
+@mixin border-radius($properties) {
+  -webkit-border-radius: $properties;
+  -moz-border-radius: $properties;
+  border-radius: $properties;
+}
+
+@mixin box-shadow($properties) {
+  -webkit-box-shadow: $properties;
+  -moz-box-shadow: $properties;
+  -o-box-shadow: $properties;
+  box-shadow: $properties;
+}
+
+@mixin box-sizing($property: border-box) {
+  -webkit-box-sizing: $property;
+  -moz-box-sizing: $property;
+  box-sizing: $property;
+}
+
+@mixin opacity($opacity: 1) {
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity * 100);
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+	}
+  &:-moz-placeholder {
+    color: $color;
+	}
+  &::-moz-placeholder {
+    color: $color;
+	}
+  &:-ms-input-placeholder {
+    color: $color;
+	}
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+}
+
+@mixin scale($ratio) {
+  -webkit-transform: scale($ratio);
+  -ms-transform: scale($ratio);
+  -o-transform: scale($ratio);
+  transform: scale($ratio);
+}
+
+@mixin skew($x: 0, $y: 0) {
+  -webkit-transform: skew($x, $y);
+  -ms-transform: skew($x, $y);
+  -o-transform: skew($x, $y);
+  transform: skew($x, $y);
+}
+
+@mixin text-shadow($properties) {
+  -webkit-text-shadow: $properties;
+  -moz-text-shadow: $properties;
+  text-shadow: $properties;
+}
+
+@mixin translate($x: 0, $y: 0) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin translate3d($x: 0, $y: 0, $z: 0) {
+  -webkit-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
+}
+
+@mixin user-select($properties: none) {
+  -webkit-user-select: $properties;
+  -moz-user-select: $properties;
+  -ms-user-select: $properties;
+  user-select: $properties;
+}
+
+@mixin vertical-gradient($from, $to) {
+  background: $to;
+  background-image: -webkit-linear-gradient(top, $from, $to);
+  background-image: -moz-linear-gradient(top, $from, $to);
+  background-image: -ms-linear-gradient(top, $from, $to);
+  background-image: -o-linear-gradient(top, $from, $to);
+  background-image: linear-gradient(to bottom, $from, $to);
+}
+
+@mixin horizontal-gradient($from, $to) {
+  background: $to;
+  background-image: -webkit-linear-gradient(left, $from, $to);
+  background-image: -moz-linear-gradient(left, $from, $to);
+  background-image: -ms-linear-gradient(left, $from, $to);
+  background-image: -o-linear-gradient(left, $from, $to);
+  background-image: linear-gradient(to right, $from, $to);
+}
+
+@mixin directional-gradient($from, $to, $deg) {
+  background-color: $to;
+  background-image: -moz-linear-gradient($deg, $from, $to);
+  background-image: -ms-linear-gradient($deg, $from, $to);
+  background-image: -webkit-linear-gradient($deg, $from, $to);
+  background-image: -o-linear-gradient($deg, $from, $to);
+  background-image: linear-gradient($deg+180, $from, $to);
+}

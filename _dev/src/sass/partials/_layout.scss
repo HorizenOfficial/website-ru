@@ -1,0 +1,15 @@
+// body {
+//     padding-top: 2rem;
+// }
+
+.b-lazy {
+    @include transition(all 0.3s ease-in-out);
+    opacity: 0;
+}
+.b-lazy.b-loaded {
+    opacity: 1;
+}
+
+.row .row {
+  margin: 0;
+}

@@ -1,0 +1,233 @@
+---
+layout: homepage
+---
+
+<div class="jumbotron">
+  <div id="bgvid"></div>
+  {% comment %}
+  <video poster="/assets/img/space-placeholder.jpg" id="bgvid" playsinline autoplay muted loop>
+    <source src="/assets/vid/space.webm" type="video/webm">
+    <source src="/assets/vid/space.mp4" type="video/mp4">
+  </video>
+  {% endcomment %}
+  <div class="color-overlay"></div>
+  <div class="block-overlay"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+         <h1>Первая в мире <strong>частная, распределенная и надежная</strong> платформа для коммуникаций, транзакций и публикаций.</h1>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="lead mt-5">
+          <i>Подпишитесь ниже для получения эксклюзивных обновлений на Ваш email</i>
+        </p>
+
+        <p id="email-success" style="display: none;">
+          Успешно! Пожалуйста, проверьте Ваш почтовый ящик, для подтверждения мы отправили Вам письмо.
+        </p>
+
+        <form id="email-form" name="mc-embedded-subscribe-form" class="form-inline justify-content-center mb-4" action="//zencash.us15.list-manage.com/subscribe/post?u=a2e6f8a8a8a21683874d560ea&id=d60b1a11f5" method="get" novalidate>
+          <div class="form-group">
+            <input type="email" value="" name="EMAIL" class="required email form-control form-control-lg" id="mce-EMAIL" placeholder="Enter your email">
+            <div class="form-control-feedback"></div>
+          </div>
+          <div class="submit_container clear">
+            <input type="submit" value="Get Exclusive Updates" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-primary">
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_a2e6f8a8a8a21683874d560ea_d60b1a11f5" tabindex="-1" value="">
+          </div>
+        </form>
+
+        <div id="quickLinks">
+
+          <a class="btn btn-secondary" data-toggle="reveal" href="#buyZenCollapse">Купить ZenCash</a>
+          <a class="btn btn-secondary" data-toggle="reveal" href="#mineZenCollapse">Майнинг ZenCash</a>
+          <a class="btn btn-secondary" data-toggle="reveal" href="#downloadWallet">Загрузить GUI-кошелек</a>
+
+          <div class="card">
+            <div id="buyZenCollapse" class="reveal">
+              <div class="card-block">
+                {% include content/buy-zen.html %}
+              </div>
+            </div>
+            <div id="mineZenCollapse" class="reveal">
+              <div class="card-block">
+                {% include content/mine-zen.html %}
+              </div>
+            </div>
+            <div id="downloadWallet" class="reveal">
+              <div class="card-block">
+                {% include content/wallets.html %}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include about.html %}
+
+<div class="feature-band content-block">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h3>Торговля и Коммуникации для Всех</h3>
+        <p>Zen использует глобальное сообщество для создания частной и безопасной платформы для мгновенных коммуникаций и транзакций.</p>
+      </div>
+      <div class="col-4 col-md-2 text-center">
+        <i class="fa fa-folder-open" aria-hidden="true"></i>
+        Постоянная
+      </div>
+      <div class="col-4 col-md-2 text-center">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+        Глобально-распределенная
+      </div>
+      <div class="col-4 col-md-2 text-center">
+        <i class="fa fa-eye-slash" aria-hidden="true"></i>
+        Частная
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="technology" class="content-block">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <h3>Разработано для всего Мира, со взглядом в Будущее</h3>
+        <h5Фокусируясь на пользователе и удобстве использования, ZenCash включает в себя следующие функции:</h5>
+        <p><strong>Международная документация и кошельки доступные на многих языках мира<br />
+          Глобальное управление осуществляющее контроль над принятием решений<br />
+          Надежное финансирование для постоянного совершенствования системы</strong>
+        </p>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <h4>Защищенные Узлы Обеспечивают стабильность системы по всему миру</h4>
+        <p>Zen использует глобальное сообщество для создания частной и безопасной платформы для мгновенных коммуникаций и транзакций.</p>
+        <p>Защищенные Узлы Zen образуют основу распределенной и устойчивой сети для обеспечения доступа и удобства использования в любой точке мира.</p>
+        <p>Защищенные узлы обеспечивают полностью зашифрованную связь и сетевую конфиденциальность для обеспечения безопасности конечного пользователя. </p>
+      </div>
+      <div class="col-md-4">
+        <h4>Финансирование непрерывной деятельности и развития</h4>
+        <p>8,5% от каждого вознаграждения за майнинг, поступает в Казначейский Фонд ZenCash и используется для дальнейших операций, - разработки и маркетинга Zen по всему миру.</p>
+        <p>Казначейские фонды находятся в доверительном управлении и распределяются Фондом Zen Blockchain, некоммерческой организацией, которой доверено развитие и поддержка экосистемы Zen.</p>
+        <p>Операции Защищенных Узлов Zen поддерживаются и финансируются за счет перенаправления 3.5% вознаграждения от майнинга блоков. </p>
+      </div>
+      <div class="col-md-4">
+        <h4>Поддержка Прав на Частную Жизнь и Конфиденциальность </h4>
+        <p>Наша платформа будет управляться посредством встроенной глобальной системы распределения полномочий по принятию решений и совместных усилий.</p>
+        <p>Мы живем в информационном обществе, в котором люди с легкостью передают управление своими личными данными в чужие руки, не подозревая, что их данные имеют ценность и их безопасность имеет огромное значение. </p>
+        <p>Мы работаем над созданием инфраструктуры, в которой пользователи смогут быть уверенными в защите и сохранности своего благосостояния, идентификационных данных, коммуникаций и транзакций.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="feature-orange content-block">
+  <div class="container-fluid">
+    {% comment %}
+    <div class="row align-items-center justify-content-center mb-5">
+      <div class="col-md-12 col-lg-8 col-xl-6 text-center">
+        <h3>Встроенная поддержка больших хранилищ данных</h3>
+        <p class="lead mt-4">Zen реализует связь посредством нулевого-доказательства с <strong>внешними устойчивыми хранилищами</strong> для неограниченных возможностей. Проще говоря, Zen является безотзывной платформой для публикации.</p>
+        <p class="lead"><strong>Ничего не будет потеряно, стерто, закрыто, либо подвержено цензуре.</strong></p>
+      </div>
+    </div>
+    {% endcomment %}
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-4">
+        <h4>Передача Информации Любого Типа и Размера</h4>
+        <p>Обмен сообщениями Zen интегрирован с (<a href="https://ipfs.io/">IPFS</a>) для обеспечения распределенного доступа к информации публикаций.</p>
+        <p>IPFS - это Распределенная Сеть. Одноранговый протокол (гипермедиа) используется для создания более быстрого, безопасного и открытого Интернет пространства.</p>
+        <p>Любая информация в любом формате может быть опубликована в IPFS, а затем передана с помощью ссылки частной и защищенной сети Zen.</p>
+      </div>
+      <div class="col-md-2">
+        <img class="img-fluid b-lazy" src="/assets/img/ipfs.png" data-src="/assets/img/ipfs.png" />
+      </div>
+      <div class="col-md-4">
+        <h4>Интеграция с IPFS Помогает Создавать Новую Интернет-Сеть</h4>
+        <p>IPFS остается верным первоначальному видению открытой, однозначной сети и предоставляет технологию, которая делает это видение реальностью.</p>
+        <p>IPFS создает всесторонне-устойчивые сети, которые обеспечивают постоянный доступ с или без подключения к сети Интернет.</p>
+        <p>IPFS обеспечивает изначальную работу систем управления версиями (таких как Git) и облегчает настройку прочных сетей для зеркалирования данных.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% comment %}
+{% include team.html %}
+{% endcomment %}
+
+<div id="latest-news" class="content-block">
+  <div class="container-fluid">
+    <div class="row align-items-center mb-3">
+      <div class="col-sm-12">
+        <h3 class="text-center">Последние новости</h3>
+      </div>
+    </div>
+    <div id="blogPosts" class="row align-items-center">
+      <!--Generated list items will go here-->
+    </div>
+    <div class="row align-items-center mt-2">
+      <div class="col-sm-12 text-center">
+        <a href="{{site.links.blog}}">Просмотреть остальные публикации в блоге>></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="faqs" class="content-block">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center">Информация о Zen</h3>
+      </div>
+
+      {% include accordion.html %}
+
+    </div>
+  </div>
+</div>
+
+<div id="links" class="content-block">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-10 col-xl-8">
+        <div class="row align-items-center justify-content-center">
+          <!-- <div class="col-md-12">
+            <h3 class="text-center">Links</h3>
+          </div> -->
+          <div class="col-md-3">
+            <img id="octocat" class="img-fluid b-lazy pr-5" src="/assets/img/Octocat.png" data-src="/assets/img/Octocat.png" />
+          </div>
+          <div class="col-md-5">
+            <h5>Страница ZenCashOfficial на Github</h5>
+            <p>
+              Страница ZenCashOfficial на Github содержит всю информацию об этапах развития кошельков и других приложений.
+            </p>
+            <a href="{{site.links.github}}" class="btn btn-primary">Go to GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+          {% comment %}
+          <div class="col-md">
+            <h5>Страница Zclassic Github</h5>
+            <p>
+              Страница Zclassic Github содержит код Zclassic и первый пул для алгоритма Equihash с открытым кодом: Z-Nomp.
+            </p>
+            <a href="https://github.com/z-classic" class="btn btn-primary">Перейти на GitHub  <i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

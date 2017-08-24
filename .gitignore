@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.jekyll-metadata
+.bundle
+node_modules
+bower_components
+/vendor
+Gemfile.lock

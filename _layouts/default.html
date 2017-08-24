@@ -1,0 +1,37 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    {% capture page_id %}{% if page.url == '/' %}homepage{% else %}{{ page.url | slugify }}{% endif %}{% endcapture %}
+
+    <body id="{{ page_id }}">
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+        <!-- JS -->
+        <script id="template-blog-post" type="text/template">
+          {% raw %}
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-block">
+                <h4 class="card-title"><a href="{{link}}">{{title}}</a></h4>
+                <p class="card-text">
+                  {{excerpt}}
+                </p>
+                <p>
+                  <a href="{{link}}" class="btn btn-primary">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          {% endraw %}
+        </script>
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+    </body>
+
+</html>

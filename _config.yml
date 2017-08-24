@@ -1,0 +1,88 @@
+---
+title: Zen
+timezone: America/New_York
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/blog/:title/"
+    featured-image: ''
+    posts:
+    -
+    -
+    -
+email: mdlorey@gmail.com
+description: A globally accessible and anonymous blockchain
+baseurl:
+url: https://zensystem.io/
+author:
+  name: Mike Lorey
+  email: mdlorey@gmail.com
+  uri:
+  bio:
+  facebook:
+  twitter: zencashofficial
+  linkedin:
+  gplus:
+  youtube:
+links:
+  bitcointalk: https://bitcointalk.org/index.php?topic=2047435.0
+  blog: https://blog.zensystem.io/
+  facebook: https://www.facebook.com/zencash/
+  forum: https://forum.zensystem.io/
+  github: https://github.com/ZencashOfficial
+  medium: https://medium.com/zencash
+  reddit: https://www.reddit.com/r/ZenSys/
+  slack: https://slackinvite.zensystem.io/
+  telegram: https://t.me/zencash
+  twitter: https://twitter.com/zencashofficial
+  youtube: https://www.youtube.com/channel/UCQ0v_lUnZHIKUQUXJzfgqOg
+wallets:
+  swing: https://github.com/vaklinov/zencash-swing-wallet-ui/releases
+  eleos: https://github.com/ZencashOfficial/eleos/releases/latest
+future: true
+show_drafts: true
+lsi: false
+permalink: pretty
+paginate: 6
+paginate_path: "/blog/page:num/"
+excerpt_separator:
+markdown: kramdown
+cloudinary:
+  cloud_name: dw4i3sw5c
+  verbose: true
+  presets:
+    default:
+      min_width: 320
+      max_width: 1600
+      fallback_max_width: 800
+      steps: 5
+      sizes: "(min-width: 50rem) 50rem, 90vw"
+gems:
+- jekyll-feed
+- jekyll-gist
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-sass-converter
+exclude:
+- _dev
+- bower.json
+- Gemfile
+- Gemfile.lock
+- gulpfile.js
+- LICENSE.md
+- node_modules
+- package.json
+- README.md
+- vendor
