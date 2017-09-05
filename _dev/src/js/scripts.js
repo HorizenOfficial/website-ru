@@ -159,3 +159,18 @@ function listCreateHtml(dataObject) {
 
   return listHtml;
 }
+
+$('#feedbackTextarea').focus(function() {
+  if (!$(this).hasClass('cleared')) {
+    $(this).html('').addClass('cleared');
+    console.log('boom');
+  }
+});
+
+$('#feedback-submit').click(function(event) {
+  var honeypot = $('#form-field').val();
+  event.preventDefault();
+  if ( honeypot.length == 0 ) {
+    $('#feedback-form').submit();
+  }
+});

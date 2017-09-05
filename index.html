@@ -68,6 +68,15 @@ layout: homepage
 
         </div>
 
+        <form id="feedback-form" class="justify-content-center mt-4" action="https://formspree.io/davit@zensystem.io" method="POST">
+          <div class="form-group">
+            <label for="feedbackTextarea">Ваши советы и предложения</label>
+            <textarea class="form-control" id="feedbackTextarea" name="feedback" rows="3" value="">Нам важно Ваше мнение! Оставьте отзыв, предложение либо просто пожелание</textarea>
+            <input type="hidden" id="form-field" />
+          </div>
+          <button type="submit" id="feedback-submit" class="btn btn-primary" value="Send">Submit</button>
+        </form>
+
       </div>
     </div>
   </div>

@@ -478,6 +478,15 @@ div.card-img-top {
   }
 }
 
+#feedback-form {
+  textarea {
+    border-radius: 0;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 12px 1px;
+    @include transition(all 0.3s ease-in-out);
+  }
+}
+
 // Countdown timer
 .main-example .countdown-container {
   height: 130px;
