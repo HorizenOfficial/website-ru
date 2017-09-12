@@ -479,6 +479,22 @@ div.card-img-top {
 }
 
 #feedback-form {
+  .row {
+    .col {
+      padding-left: .5rem;
+      padding-right: 0;
+      &:first-of-type {
+        padding-left: 0;
+        padding-right: .5rem;
+      }
+    }
+  }
+  input {
+    border-radius: 0;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 12px 1px;
+    @include transition(all 0.3s ease-in-out);
+  }
   textarea {
     border-radius: 0;
     border: none;
